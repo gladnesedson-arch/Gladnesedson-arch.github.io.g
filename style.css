@@ -1,0 +1,106 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+    padding: 30px 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;/* Allows items to wrap on smaller screens */
+    text-align: center;
+}
+
+.profile-pic {
+    flex: 1; /* Takes up available space */
+    min-width: 200px; /* adjust size as needed*/
+    padding: 20px;
+}
+
+.profile-pic img {
+    border-radius: 50%; /* make the image round */
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the are nicely */
+    border: #77aaff 5px solid;
+}
+
+.about-content {
+    flex: 2; /* Takes up more space than the picture */
+    padding: 20px;
+    text-align: left; /* Align text to the left within its container */
+}
+
+#links {
+    padding: 30px 0;
+    background: #e2e2e2;
+    text-align: center;
+}
+
+#links ul {
+    list-style: none;
+    padding: 0;
+}
+
+#links ul li {
+    margin-bottom: 10px;
+}
+
+#links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#links a:hover {
+    color: #77aaff;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width:768px) {
+    .container {}
+        width: 95%;
+}
+
+   #about {
+     flex-direction: column ; /* stack items vertically on small screens */
+   }
+
+   .about-content {
+    text-align: center; /* center text when stacked */
+   }
